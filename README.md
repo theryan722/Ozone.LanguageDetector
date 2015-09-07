@@ -16,7 +16,7 @@ Both return a language name from an enum (Language.Language). If the language ca
 Check out the wiki for examples and further help.
 
 ###Binaries
-You can download the library from the [releases](https://github.com/theryan722/Ozone.Markdown/releases/) page.
+You can download the library from the [releases](https://github.com/theryan722/Ozone.LanguageDetector/releases/) page.
 
 ###Project Status
 This project is under active development and will be continually improved over time. Contributions are welcome of course.
