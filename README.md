@@ -24,6 +24,9 @@ You can download the library from the [releases](https://github.com/theryan722/O
 ###Project Status
 This project is under active development and will be continually improved over time. Contributions are welcome of course.
 
+###Future Plans
+In the future I plan on creating a GUI application and console application that utilize the library.
+
 ###License
 Copyright 2015 Ryan O'Day
 
