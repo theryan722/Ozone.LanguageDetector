@@ -1,5 +1,5 @@
 # Ozone.LanguageDetector
-Determines the programming language used in a snippet or file
+A .Net library that determines the programming language used in a snippet or file.
 
 ###Usage
 First off, you need to reference the library in your project.
