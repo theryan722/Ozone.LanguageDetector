@@ -1,0 +1,18 @@
+:=
+arrayconst:
+bytearray:
+number:
+string:
+charconst:
+symconst:
+exp:
+block:
+keyexpr
+choose:
+cancel:
+for:
+#(
+#[
+#! /usr/local/bin/gst
+| 
+[|

@@ -1,0 +1,12 @@
+@echo off
+echo
+pause
+cd
+cls
+dir
+start
+ping
+move
+type
+goto
+exit

@@ -1,0 +1,15 @@
+debugger
+export
+arguments
+package
+synchronized
+transient
+Infinity
+NaN
+prototype
+isPrototypeOf
+hasOwnProperty
+document.write
+document.getElementById
+.innerHTML
+alert

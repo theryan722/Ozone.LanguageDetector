@@ -1,0 +1,10 @@
+-- 
+procedure
+begin
+overriding
+terminate
+delay
+limited
+synchronized
+pragma
+tagged

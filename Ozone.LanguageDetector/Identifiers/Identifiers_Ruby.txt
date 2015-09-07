@@ -1,0 +1,13 @@
+puts
+def
+end
+__ENCODING__
+__END__
+__FILE__
+alias
+defined?
+ensure
+module
+rescue
+unless
+undef

@@ -1,0 +1,11 @@
+assert
+{
+}
+scrictfp
+package
+super
+instanceof
+import
+javax.
+public static void main(String[] args)
+java.

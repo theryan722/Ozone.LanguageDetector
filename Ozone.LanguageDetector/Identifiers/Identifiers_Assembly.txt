@@ -1,0 +1,12 @@
+mov
+syscall
+db
+# 
+.ascii
+.text
+.global
+call
+ret
+push
+lea
+pop

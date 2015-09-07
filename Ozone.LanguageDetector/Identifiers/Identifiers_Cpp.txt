@@ -1,0 +1,15 @@
+alignas
+alignof
+#include
+iostream
+virtual
+.h
+dynamic_cast
+std::
+{
+}
+int main()
+//
+;
+<<
+>>
