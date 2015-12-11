@@ -10,6 +10,9 @@ A .Net library that determines the programming language used in a snippet or fil
 ###Supported Languages
 This library can currently detect over 20 different languages. A complete list can be viewed [here](https://github.com/theryan722/Ozone.LanguageDetector/wiki/Supported-Languages).
 
+###Upcoming Update
+I am in the process of revamping and improving the accuracy of language detection. This will also lead to improvements in differentiating between various C-like languages.
+
 ###Usage
 First off, you need to reference the library in your project.
 
