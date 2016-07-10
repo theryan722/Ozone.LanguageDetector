@@ -110,111 +110,261 @@ Public Class Detector
 #Region "Helper"
 
     Private Shared Sub TallyLanguages(ByRef langtally As LanguageTally, ByVal snippet As String)
+        Dim arr(2) As String
         For Each item As String In ada
-            If snippet.Contains(item) Then
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.Ada -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.Ada += CInt(arr(1))
+                End If
+            Else
                 langtally.Ada += 1
             End If
         Next
         For Each item As String In assembly
-            If snippet.Contains(item) Then
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.Assembly -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.Assembly += CInt(arr(1))
+                End If
+            Else
                 langtally.Assembly += 1
             End If
         Next
         For Each item As String In batch
-            If snippet.Contains(item) Then
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.Batch -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.Batch += CInt(arr(1))
+                End If
+            Else
                 langtally.Batch += 1
             End If
         Next
-        For Each item As String In css
-            If snippet.Contains(item) Then
-                langtally.Css += 1
-            End If
-        Next
-        For Each item As String In csharp
-            If snippet.Contains(item) Then
-                langtally.CSharp += 1
-            End If
-        Next
         For Each item As String In cpp
-            If snippet.Contains(item) Then
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.Cpp -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.Cpp += CInt(arr(1))
+                End If
+            Else
                 langtally.Cpp += 1
             End If
         Next
+        For Each item As String In csharp
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.CSharp -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.CSharp += CInt(arr(1))
+                End If
+            Else
+                langtally.CSharp += 1
+            End If
+        Next
+        For Each item As String In css
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.Css -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.Css += CInt(arr(1))
+                End If
+            Else
+                langtally.Css += 1
+            End If
+        Next
         For Each item As String In fortran
-            If snippet.Contains(item) Then
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.Fortran -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.Fortran += CInt(arr(1))
+                End If
+            Else
                 langtally.Fortran += 1
             End If
         Next
         For Each item As String In html
-            If snippet.Contains(item) Then
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.Html -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.Html += CInt(arr(1))
+                End If
+            Else
                 langtally.Html += 1
             End If
         Next
         For Each item As String In java
-            If snippet.Contains(item) Then
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.Java -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.Java += CInt(arr(1))
+                End If
+            Else
                 langtally.Java += 1
             End If
         Next
         For Each item As String In javascript
-            If snippet.Contains(item) Then
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.JavaScript -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.JavaScript += CInt(arr(1))
+                End If
+            Else
                 langtally.JavaScript += 1
             End If
         Next
         For Each item As String In lisp
-            If snippet.Contains(item) Then
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.Lisp -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.Lisp += CInt(arr(1))
+                End If
+            Else
                 langtally.Lisp += 1
             End If
         Next
         For Each item As String In lua
-            If snippet.Contains(item) Then
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.Lua -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.Lua += CInt(arr(1))
+                End If
+            Else
                 langtally.Lua += 1
             End If
         Next
-        For Each item As String In php
-            If snippet.Contains(item) Then
-                langtally.Php += 1
-            End If
-        Next
         For Each item As String In pascal
-            If snippet.Contains(item) Then
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.Pascal -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.Pascal += CInt(arr(1))
+                End If
+            Else
                 langtally.Pascal += 1
             End If
         Next
         For Each item As String In perl
-            If snippet.Contains(item) Then
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                MsgBox(arr(1))
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.Perl -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.Perl += CInt(arr(1))
+                End If
+            Else
                 langtally.Perl += 1
             End If
         Next
+        For Each item As String In php
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.Php -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.Php += CInt(arr(1))
+                End If
+            Else
+                langtally.Php += 1
+            End If
+        Next
         For Each item As String In python
-            If snippet.Contains(item) Then
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.Python -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.Python += CInt(arr(1))
+                End If
+            Else
                 langtally.Python += 1
             End If
         Next
         For Each item As String In ruby
-            If snippet.Contains(item) Then
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.Ruby -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.Ruby += CInt(arr(1))
+                End If
+            Else
                 langtally.Ruby += 1
             End If
         Next
-        For Each item As String In sql
-            If snippet.Contains(item) Then
-                langtally.Sql += 1
-            End If
-        Next
         For Each item As String In smalltalk
-            If snippet.Contains(item) Then
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.SmallTalk -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.SmallTalk += CInt(arr(1))
+                End If
+            Else
                 langtally.SmallTalk += 1
             End If
         Next
+        For Each item As String In sql
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.Sql -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.Sql += CInt(arr(1))
+                End If
+            Else
+                langtally.Sql += 1
+            End If
+        Next
         For Each item As String In vb
-            If snippet.Contains(item) Then
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.Vb -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.Vb += CInt(arr(1))
+                End If
+            Else
                 langtally.Vb += 1
             End If
         Next
         For Each item As String In xml
-            If snippet.Contains(item) Then
+            arr = item.Split("|")
+            If snippet.ToLower.Contains(arr(0)) Then
+                If arr(1).Substring(0, 1) = "-" Then
+                    langtally.Xml -= arr(1).Substring(1, arr(1).Length - 1)
+                Else
+                    langtally.Xml += CInt(arr(1))
+                End If
+            Else
                 langtally.Xml += 1
             End If
         Next
+        My.Computer.Clipboard.SetText(langtally.ToString())
     End Sub
 
 #End Region

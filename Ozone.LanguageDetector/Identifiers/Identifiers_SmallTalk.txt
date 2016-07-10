@@ -1,18 +1,16 @@
-:=
-arrayconst:
-bytearray:
-number:
-string:
-charconst:
-symconst:
-exp:
-block:
-keyexpr
-choose:
-cancel:
-for:
-#(
-#[
-#! /usr/local/bin/gst
-| 
-[|
+:=|+1
+arrayconst:|+1
+bytearray:|+1
+number:|+1
+string:|+1
+charconst:|+1
+symconst:|+1
+exp:|+1
+block:|+1
+keyexpr|+1
+choose:|+1
+cancel:|+1
+for:|+1
+#(|+1
+#[|+1
+#! /usr/local/bin/gst|+10

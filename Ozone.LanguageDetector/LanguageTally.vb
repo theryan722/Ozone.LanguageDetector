@@ -30,6 +30,10 @@
 
 #Region "Methods"
 
+    Public Overrides Function ToString() As String
+        Return "Ada: " & Ada & vbNewLine & "Assembly: " & Assembly & vbNewLine & "Batch: " & Batch & vbNewLine & "Css: " & Css & vbNewLine & "C#: " & CSharp & vbNewLine & "Cpp: " & Cpp & vbNewLine & "Fortran: " & Fortran & vbNewLine & "Html: " & Html & vbNewLine & "Java: " & Java & vbNewLine & "JavaScript: " & JavaScript & vbNewLine & "Lisp: " & Lisp & vbNewLine & "Lua: " & Lua & vbNewLine & "Php: " & Php & vbNewLine & "Pascal: " & Pascal & vbNewLine & "Perl: " & Perl & vbNewLine & "PlainText: " & PlainText & vbNewLine & "Python: " & Python & vbNewLine & "Ruby: " & Ruby & vbNewLine & "Sql: " & Sql & vbNewLine & "SmallTalk: " & SmallTalk & vbNewLine & "Unknown: " & Unknown & vbNewLine & "Vb: " & Vb & vbNewLine & "Xml: " & Xml
+    End Function
+
     Public Sub ClearTallies()
         Ada = 0
         Css = 0

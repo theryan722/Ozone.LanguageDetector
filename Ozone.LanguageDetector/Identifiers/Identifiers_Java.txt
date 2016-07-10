@@ -1,11 +1,16 @@
-assert
-{
-}
-scrictfp
-package
-super
-instanceof
-import
-javax.
-public static void main(String[] args)
-java.
+assert|+1
+{|+1
+}|+1
+scrictfp|+1
+package|+1
+super|+1
+instanceof|+1
+import|+1
+javax.|+1
+public static void main(String[] args)|+1
+java.|+5
+::|-3
+#include|-3
+#using <|-3
+System.Linq;|-3
+System.Collections.Generic;|-3

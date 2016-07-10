@@ -1,12 +1,14 @@
-@echo off
-echo
-pause
-cd
-cls
-dir
-start
-ping
-move
-type
-goto
-exit
+@echo off|+10
+echo|+1
+pause|+1
+cd|+1
+cls|+1
+dir|+1
+start|+1
+ping|+1
+move|+1
+type|+1
+goto|+1
+exit|+1
+#include|-3
+System.|-3

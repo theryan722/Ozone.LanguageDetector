@@ -1,9 +1,14 @@
-delegate
-{
-}
-using
-namespace
-System.Linq;
-System.Collections.Generic;
-System.Text;
-System.
+delegate|+1
+{|+1
+}|+1
+using|+1
+namespace|+1
+System.Linq;|+1
+System.Collections.Generic;|+1
+System.Text;|+1
+System.|+1
+System::|-3
+#using <|-3
+::|-3
+java.|-3
+javax.|-3

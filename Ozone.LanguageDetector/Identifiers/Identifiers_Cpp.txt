@@ -1,15 +1,21 @@
-alignas
-alignof
-#include
-iostream
-virtual
-.h
-dynamic_cast
-std::
-{
-}
-int main()
-//
-;
-<<
->>
+alignas|+1
+alignof|+1
+#include|+1
+iostream|+1
+virtual|+1
+.h|+1
+dynamic_cast|+1
+std::|+1
+{|+1
+}|+1
+int main()|+1
+//|+1
+;|+1
+<<|+1
+>>|+1
+System.Linq;|-3
+System.Text;|-3
+System.|-3
+java.|-3
+javax.|-3
+System.Collections.Generic;|-3
